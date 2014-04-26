@@ -47,11 +47,16 @@
       "test" : {
          "requires" : {
             "File::Spec" : "0",
+            "File::Temp" : "0",
             "IO::Handle" : "0",
             "IPC::Open3" : "0",
+            "Moose" : "0",
             "Test::CheckDeps" : "0.010",
+            "Test::DZil" : "0",
             "Test::Moose::More" : "0",
             "Test::More" : "0.94",
+            "autobox::Core" : "1.24",
+            "lib" : "0",
             "perl" : "5.006",
             "strict" : "0",
             "warnings" : "0"
@@ -61,10 +66,10 @@
    "provides" : {
       "Dist::Zilla::Role::Store" : {
          "file" : "lib/Dist/Zilla/Role/Store.pm",
-         "version" : "0.000001"
+         "version" : "0.000002"
       }
    },
-   "release_status" : "testing",
+   "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
          "web" : "https://github.com/RsrchBoy/dist-zilla-role-store/issues"
@@ -76,7 +81,7 @@
          "web" : "https://github.com/RsrchBoy/dist-zilla-role-store"
       }
    },
-   "version" : "0.000001",
+   "version" : "0.000002",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.018002"
@@ -491,7 +496,7 @@
                "Dist::Zilla::Plugin::Git::Tag" : {
                   "branch" : null,
                   "signed" : "1",
-                  "tag" : "0.000001",
+                  "tag" : "0.000002",
                   "tag_format" : "%v",
                   "tag_message" : "v%v",
                   "time_zone" : "local"
@@ -813,7 +818,7 @@
       "zilla" : {
          "class" : "Dist::Zilla::Dist::Builder",
          "config" : {
-            "is_trial" : "1"
+            "is_trial" : "0"
          },
          "version" : "5.015"
       }

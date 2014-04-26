@@ -11,7 +11,9 @@ my @files = (
     't/00-check-deps.t',
     't/00-compile.t',
     't/000-report-versions-tiny.t',
-    't/basic.t'
+    't/basic.t',
+    't/lib/Dist/Zilla/Stash/TestStash.pm',
+    't/validate-structure.t'
 );
 
 notabs_ok($_) foreach @files;

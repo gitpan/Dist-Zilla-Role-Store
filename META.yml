@@ -4,11 +4,16 @@ author:
   - 'Chris Weyl <cweyl@alumni.drew.edu>'
 build_requires:
   File::Spec: '0'
+  File::Temp: '0'
   IO::Handle: '0'
   IPC::Open3: '0'
+  Moose: '0'
   Test::CheckDeps: '0.010'
+  Test::DZil: '0'
   Test::Moose::More: '0'
   Test::More: '0.94'
+  autobox::Core: '1.24'
+  lib: '0'
   perl: '5.006'
   strict: '0'
   warnings: '0'
@@ -28,7 +33,7 @@ no_index:
 provides:
   Dist::Zilla::Role::Store:
     file: lib/Dist/Zilla/Role/Store.pm
-    version: '0.000001'
+    version: '0.000002'
 requires:
   Dist::Zilla::Role::Stash: '0'
   Moose::Role: '0'
@@ -39,7 +44,7 @@ resources:
   bugtracker: https://github.com/RsrchBoy/dist-zilla-role-store/issues
   homepage: https://github.com/RsrchBoy/dist-zilla-role-store
   repository: https://github.com/RsrchBoy/dist-zilla-role-store.git
-version: '0.000001'
+version: '0.000002'
 x_Dist_Zilla:
   perl:
     version: '5.018002'
@@ -358,7 +363,7 @@ x_Dist_Zilla:
         Dist::Zilla::Plugin::Git::Tag:
           branch: ~
           signed: '1'
-          tag: '0.000001'
+          tag: '0.000002'
           tag_format: '%v'
           tag_message: v%v
           time_zone: local
@@ -609,6 +614,6 @@ x_Dist_Zilla:
   zilla:
     class: Dist::Zilla::Dist::Builder
     config:
-      is_trial: '1'
+      is_trial: '0'
     version: '5.015'
 x_authority: cpan:RSRCHBOY
